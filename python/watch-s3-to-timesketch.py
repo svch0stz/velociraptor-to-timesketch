@@ -20,7 +20,7 @@ while True:
         delta_1s = time_now - timedelta(seconds=1200)
         if key.last_modified >= delta_1s and ".zip" in key.key:
 
-            if path.isfile("/opt/IR_data/"+key.key):
+            if path.isfile("/opt/timesketch/upload/"+key.key):
                 print("File exists, skipping")
             else:
-                s3_client.download_file(bucket_name, key.key, '/opt/IR_data/'+key.key)
+                s3_client.download_file(bucket_name, key.key, '/opt/timesketch/upload/'+key.key)
