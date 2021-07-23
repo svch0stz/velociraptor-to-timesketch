@@ -16,9 +16,6 @@ process_files () {
     # Delete unnecessary collection data
     rm -r $PARENT_DATA_DIR/$SYSTEM/fs $PARENT_DATA_DIR/$SYSTEM/UploadFlow.json $PARENT_DATA_DIR/$SYSTEM/UploadFlow 
     
-    # Install requirements
-    docker exec -i timesketch_timesketch-worker_1 /bin/bash -c "pip3 install timesketch-import-client redis==3.4 pyelasticsearch elasticsearch==7.13.1"
-    
     # Run log2timeline and generate Plaso file
     docker exec -i timesketch_timesketch-worker_1 /bin/bash -c "log2timeline.py --status_view window --storage_file /usr/share/timesketch/upload/plaso/$SYSTEM.plaso /usr/share/timesketch/upload/$SYSTEM"
 
