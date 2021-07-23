@@ -17,7 +17,7 @@ cp systemd/data-to-timesketch.service /etc/systemd/system/data-to-timesketch.ser
 systemctl enable data-to-timesketch.service
 systemctl start data-to-timesketch.service
 
-cp systemd/watch-plaso-to-s3.servicee /etc/systemd/system/watch-plaso-to-s3.service
+cp systemd/watch-plaso-to-s3.service /etc/systemd/system/watch-plaso-to-s3.service
 systemctl enable watch-plaso-to-s3.service
 systemctl start watch-plaso-to-s3.service
 
