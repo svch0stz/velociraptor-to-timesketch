@@ -1,5 +1,8 @@
 # velociraptor-to-timesketch
 
+![sketch](https://user-images.githubusercontent.com/4219694/126829968-b613e88b-d558-4a67-a70f-c5198353b284.jpg)
+
+
 **We will be working on making this a pre-baked AMI, but here are the deployment steps in the meantime <3**
 
 **Note:** You may need to add/modify `fs.inotify.max_user_watches` in `/etc/sysctl.conf`. The default is 8192, and you may need to increase this number. Run `sysctl -p` after modifying.
