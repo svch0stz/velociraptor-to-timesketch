@@ -15,6 +15,10 @@ cp bash/watch-plaso-to-s3.sh /opt/watch-plaso-to-s3.sh
 chmod +x /opt/watch-plaso-to-s3.sh
 chmod +x /opt/watch-to-timesketch.sh
 
+# Make sure Plaso dirs exist
+mkdir -p /opt/timesketch/upload/plaso
+mkdir -p /opt/timesketch/upload/plaso_complete
+
 # Configure services
 cp systemd/data-to-timesketch.service /etc/systemd/system/data-to-timesketch.service
 systemctl enable data-to-timesketch.service
