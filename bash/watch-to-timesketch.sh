@@ -1,4 +1,4 @@
-# Watch this directory for new files (ie: vr_kapetriage_$system.zip added to /opt/IR_data)
+# Watch this directory for new files (ie: vr_kapetriage_$system.zip added to /opt/timesketch/upload)
 PARENT_DATA_DIR="/opt/timesketch/upload"
 
 process_files () {
