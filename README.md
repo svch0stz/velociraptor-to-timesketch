@@ -22,7 +22,7 @@
   <img width="924" alt="Screen Shot 2021-07-08 at 2 36 18 PM" src="https://user-images.githubusercontent.com/1244979/124973850-114cdc80-dffa-11eb-8267-fc97488993b2.png">
 * Run deploy.sh
   ```
-  bash deploy.sh
+  ./deploy.sh
   ```
 * Kick off `Windows.KapeFiles.Targets` collection on one or more clients in Velociraptor
   * Wait for triage zip to upload to S3
