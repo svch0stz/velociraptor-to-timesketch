@@ -1,6 +1,9 @@
 #!/bin/bash 
 
-# Install requirements
+# Install system requirements
+apt install inotify-tools -y 
+
+# Install pip requirements
 pip3 install boto3 pytz 
 
 # Copy files
