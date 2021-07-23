@@ -16,7 +16,8 @@
   ```
   aws configure 
   ```
-* Modify vars/scripts as necessary with S3 bucket name(s)
+* Modify `bucket_name` in `watch-s3-to-timesketch.py` with S3 bucket name
+* Modify `BUCKET_NAME` in `watch-plaso-to-s3.sh` with S3 bucket name
 * Add Velociraptor artifact in Velociraptor and configure with AWS S3 bucket, region, and IAM credentials
   <img width="924" alt="Screen Shot 2021-07-08 at 2 36 18 PM" src="https://user-images.githubusercontent.com/1244979/124973850-114cdc80-dffa-11eb-8267-fc97488993b2.png">
 * Run deploy.sh
