@@ -23,7 +23,7 @@ process_files () {
     docker exec -it timesketch_timesketch-worker_1 /bin/bash -c 'timesketch_importer -u $username -p "$password" --host http://timesketch-web:5000 --timeline_name $SYSTEM --sketch_id 1 /usr/share/timesketch/upload/plaso/$SYSTEM.plaso'
 
     # Copy Plaso files to dir being watched to upload to S3
-    cp -ar /usr/share/timesketch/upload/plaso/$SYSTEM.plaso /usr/share/timesketch/upload/plaso_complete
+    cp -ar /opt/timesketch/upload/plaso/$SYSTEM.plaso /opt/timesketch/upload/plaso_complete
 }
 
 inotifywait -m -r -e move "$PARENT_DATA_DIR" --format "%f" | while read ZIP
